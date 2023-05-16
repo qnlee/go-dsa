@@ -1,7 +1,7 @@
 package search_sort_test
 
 import (
-	"go-dsa/templates/search_sort"
+	"go-dsa/template/search_sort"
 	"testing"
 )
 

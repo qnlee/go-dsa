@@ -1,7 +1,7 @@
-package helpers_test
+package string_manip_test
 
 import (
-	"go-dsa/templates/helpers"
+	"go-dsa/template/string_manip"
 	"testing"
 )
 
@@ -19,13 +19,13 @@ func TestStripNonAlphabeticalRegexp(t *testing.T) {
 	}
 
 	for _, c := range cases {
-		actual := helpers.StripNonAlphabeticalRegexp(c.in)
+		actual := string_manip.StripNonAlphabeticalRegexp(c.in)
 		if actual != c.expected {
-			t.Errorf("StripNonAlphabeticalRegexp: Expected [%s], but got [%s]", c.expected, actual)
+			t.Errorf("StripNonAlphabeticalRegexp(%s): Expected [%s], but got [%s]", c.in, c.expected, actual)
 		}
-		actual = helpers.StripNonAlphabeticalUnicode(c.in)
+		actual = string_manip.StripNonAlphabeticalUnicode(c.in)
 		if actual != c.expected {
-			t.Errorf("StripNonAlphabeticalUnicode: Expected [%s], but got [%s]", c.expected, actual)
+			t.Errorf("StripNonAlphabeticalUnicode(%s): Expected [%s], but got [%s]", c.in, c.expected, actual)
 		}
 	}
 }
@@ -33,13 +33,13 @@ func TestStripNonAlphabeticalRegexp(t *testing.T) {
 func BenchmarkStripNonAlphabeticalRegexp(b *testing.B) {
 	input := "A man a plan, a canal: Panama"
 	for n := 0; n < b.N; n++ {
-		helpers.StripNonAlphabeticalRegexp(input)
+		string_manip.StripNonAlphabeticalRegexp(input)
 	}
 }
 
 func BenchmarkStripNonAlphabeticalUnicode(b *testing.B) {
 	input := "A man a plan, a canal: Panama"
 	for n := 0; n < b.N; n++ {
-		helpers.StripNonAlphabeticalUnicode(input)
+		string_manip.StripNonAlphabeticalUnicode(input)
 	}
 }

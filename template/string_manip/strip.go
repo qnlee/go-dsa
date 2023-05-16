@@ -1,4 +1,4 @@
-package helpers
+package string_manip
 
 import (
 	"regexp"
