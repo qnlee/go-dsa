@@ -1,7 +1,7 @@
 package str_test
 
 import (
-	"go-dsa/lc_easy/str"
+	"go-dsa/leetcode/lc_easy/str"
 	"testing"
 )
 
