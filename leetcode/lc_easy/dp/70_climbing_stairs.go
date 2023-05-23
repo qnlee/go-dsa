@@ -1,4 +1,4 @@
-package dynamic_programming
+package dp
 
 /*
 You are climbing a staircase. It takes n steps to reach the top.
@@ -34,8 +34,19 @@ Constraints:
 // n=3: 1+1+1 / 1+2 / 2+1 == 3 ways
 // n=4: 2+2 / 2+1+1 / 1+2+1 / 1+1+2 / 1+1+1+1 == 5 ways == climbStairs(4-1) + climbStairs(4-2)
 
-func climbStairs(n int) int {
-	return bottomUpOptimized(n)
+func ClimbStairs(n int, soln string) int {
+	switch soln {
+	case "recursive":
+		return recursive(n)
+	case "recursiveMemo":
+		return recursiveMemo(n)
+	case "bottomUp":
+		return bottomUp(n)
+	case "bottomUpOptimized":
+		return bottomUpOptimized(n)
+	default:
+		return bottomUpOptimized(n)
+	}
 }
 
 // Top-down approach (recursion)
