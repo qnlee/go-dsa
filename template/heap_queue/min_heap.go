@@ -1,4 +1,4 @@
-package heap
+package heap_queue
 
 // Based on example of IntHeap taken from https://pkg.go.dev/container/heap
 
