@@ -4,13 +4,13 @@ import "container/heap"
 
 // Based on example of PriorityQueue taken from https://pkg.go.dev/container/heap
 
-type Element struct {
+type QueueElement struct {
 	Value    int
 	Priority int
 	Index    int
 }
 
-type PriorityQueue []*Element
+type PriorityQueue []*QueueElement
 
 func (pq PriorityQueue) Len() int {
 	return len(pq)
@@ -28,7 +28,7 @@ func (pq PriorityQueue) Swap(i, j int) {
 
 func (pq *PriorityQueue) Push(x any) {
 	n := len(*pq)
-	elem := x.(*Element)
+	elem := x.(*QueueElement)
 	elem.Index = n
 	*pq = append(*pq, elem)
 }
@@ -43,7 +43,7 @@ func (pq *PriorityQueue) Pop() any {
 	return elem
 }
 
-func (pq *PriorityQueue) update(elem *Element, value int, priority int) {
+func (pq *PriorityQueue) update(elem *QueueElement, value int, priority int) {
 	elem.Value = value
 	elem.Priority = priority
 	heap.Fix(pq, elem.Index)

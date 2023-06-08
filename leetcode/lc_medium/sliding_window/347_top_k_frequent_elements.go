@@ -56,15 +56,15 @@ func TopKFrequentMinHeap(nums []int, k int) []int {
 	heap.Init(h)
 
 	for n, f := range freqs {
-		heap.Push(h, &heap_queue.Element{Value: n, Priority: f})
+		h.Push(heap_queue.HeapElement{Value: n, Frequency: f})
 		if h.Len() > k {
-			heap.Pop(h)
+			h.Pop()
 		}
 	}
 
 	res := make([]int, k)
 	for i := k - 1; i >= 0; i-- {
-		res[i] = heap.Pop(h).(heap_queue.Element).Value
+		res[i] = heap.Pop(h).(heap_queue.HeapElement).Value
 	}
 
 	return res
