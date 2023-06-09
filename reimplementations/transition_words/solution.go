@@ -14,7 +14,7 @@ type partialDict struct {
 	wordSet map[string]bool
 }
 
-func NewPartialDict(wordList []string) *partialDict {
+func makePartialDict(wordList []string) *partialDict {
 	wordSet := make(map[string]bool)
 	for _, w := range wordList {
 		wordSet[w] = true
@@ -31,7 +31,7 @@ func TransitionWords(startWord string, endWord string, wordList []string) int {
 		return 0
 	}
 
-	dict := NewPartialDict(wordList)
+	dict := makePartialDict(wordList)
 	if !dict.IsValidWord(startWord) || !dict.IsValidWord(endWord) {
 		return -1
 	}
@@ -52,10 +52,6 @@ func TransitionWords(startWord string, endWord string, wordList []string) int {
 				for c := 'a'; c <= 'z'; c++ {
 					newWord := word[:j] + string(c) + word[j+1:]
 					if endSet[newWord] {
-						//fmt.Printf(
-						//	"[LEVEL=%d]\n    BeginSet: %v\n    EndSet: %v\n    NextLevelSet: %v\n",
-						//	level, beginSet, endSet, nextLevelSet,
-						//)
 						return level + 1 // reached the endWord, return the level
 					}
 					if dict.IsValidWord(newWord) && !visited[newWord] {
@@ -65,10 +61,6 @@ func TransitionWords(startWord string, endWord string, wordList []string) int {
 				}
 			}
 		}
-		//fmt.Printf(
-		//	"[LEVEL=%d]\n    BeginSet: %v\n    EndSet: %v\n    NextLevelSet: %v\n",
-		//	level, beginSet, endSet, nextLevelSet,
-		//)
 		beginSet = nextLevelSet
 		level++
 	}
