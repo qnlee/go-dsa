@@ -1,4 +1,4 @@
-package sliding_window
+package lc347_top_k_frequent_elements
 
 import (
 	"container/heap"

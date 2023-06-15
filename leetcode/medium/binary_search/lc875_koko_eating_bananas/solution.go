@@ -1,4 +1,6 @@
-package binary_search
+package lc875_koko_eating_bananas
+
+import "go-dsa/leetcode/helpers"
 
 /*
 Koko loves to eat bananas. There are n piles of bananas, the ith pile has piles[i] bananas. The guards have gone and
@@ -28,7 +30,7 @@ Constraints:
 */
 
 func minEatingSpeed(piles []int, h int) int {
-	max := maxBanans(piles)
+	max := helpers.MaxInSlice(piles)
 	left := 1    // min K
 	right := max // max K
 
@@ -52,14 +54,4 @@ func canEatInTime(piles []int, k int, h int) bool {
 		}
 	}
 	return hrs <= h
-}
-
-func maxBanans(piles []int) int {
-	var max int
-	for _, p := range piles {
-		if p > max {
-			max = p
-		}
-	}
-	return max
 }

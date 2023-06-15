@@ -1,4 +1,4 @@
-package matrix
+package lc74_search_2d_matrix
 
 /*
 You are given an m x n integer matrix matrix with the following two properties:

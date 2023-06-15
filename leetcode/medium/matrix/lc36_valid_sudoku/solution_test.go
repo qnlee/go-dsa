@@ -1,7 +1,6 @@
-package matrix_test
+package lc36_valid_sudoku
 
 import (
-	"go-dsa/leetcode/lc_medium/matrix"
 	"testing"
 )
 
@@ -106,7 +105,7 @@ func TestIsValidSudoku_FilledBoards(t *testing.T) {
 		{invalidFilled, false, "invalid"},
 	}
 	for _, tc := range testCases {
-		actual := matrix.IsValidSudoku(tc.board)
+		actual := isValidSudoku(tc.board)
 		if actual != tc.expected {
 			t.Errorf("Expected %v on [%s], but got %v", tc.expected, tc.errCase, actual)
 		}
@@ -121,7 +120,7 @@ func TestIsValidSudoku_PartiallyFilledBoards(t *testing.T) {
 		{invalidSqrPartial, false, "invalid (square)"},
 	}
 	for _, tc := range testCases {
-		actual := matrix.IsValidSudoku(tc.board)
+		actual := isValidSudoku(tc.board)
 		if actual != tc.expected {
 			t.Errorf("Expected %v on [%s], but got %v", tc.expected, tc.errCase, actual)
 		}
@@ -136,7 +135,7 @@ func TestIsValidSudokuAlt_PartiallyFilledBoards(t *testing.T) {
 		{invalidSqrPartial, false, "invalid (square)"},
 	}
 	for _, tc := range testCases {
-		actual := matrix.IsValidSudokuAlt(tc.board)
+		actual := isValidSudokuAlt(tc.board)
 		if actual != tc.expected {
 			t.Errorf("Expected %v on [%s], but got %v", tc.expected, tc.errCase, actual)
 		}
@@ -149,7 +148,7 @@ func TestIsValidSudokuAlt_FilledBoards(t *testing.T) {
 		{invalidFilled, false, "invalid"},
 	}
 	for _, tc := range testCases {
-		actual := matrix.IsValidSudoku(tc.board)
+		actual := isValidSudoku(tc.board)
 		if actual != tc.expected {
 			t.Errorf("Expected %v on [%s], but got %v", tc.expected, tc.errCase, actual)
 		}
@@ -158,12 +157,12 @@ func TestIsValidSudokuAlt_FilledBoards(t *testing.T) {
 
 func BenchmarkIsValidSudoku(b *testing.B) {
 	for n := 0; n < b.N; n++ {
-		matrix.IsValidSudoku(validFilled)
+		isValidSudoku(validFilled)
 	}
 }
 
 func BenchmarkIsValidSudokuAlt(b *testing.B) {
 	for n := 0; n < b.N; n++ {
-		matrix.IsValidSudokuAlt(validFilled)
+		isValidSudokuAlt(validFilled)
 	}
 }

@@ -1,4 +1,4 @@
-package sliding_window_test
+package lc347_top_k_frequent_elements_test
 
 import (
 	"go-dsa/leetcode/lc_medium/sliding_window"
