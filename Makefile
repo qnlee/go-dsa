@@ -2,11 +2,16 @@
 
 build:
 	go build -v ./...
+test_lc_easy:
+	go test -v -cover ./leetcode/easy/...
 
-test_leetcode_medium:
-	go test -v ./leetcode/medium/...
+test_lc_medium:
+	go test -v -cover ./leetcode/medium/...
 
-bench_leetcode_medium:
+bench_lc_easy:
+	go test -bench=. ./leetcode/easy/... -run=^$ -v
+
+bench_lc_medium:
 	go test -bench=. ./leetcode/medium/... -run=^$ -v
 
 test:
