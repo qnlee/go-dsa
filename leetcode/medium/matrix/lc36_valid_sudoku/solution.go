@@ -1,4 +1,4 @@
-package matrix
+package lc36_valid_sudoku
 
 /*
 Determine if a 9 x 9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules:
@@ -31,7 +31,7 @@ Constraints:
 	board[i][j] is a digit 1-9 or '.'.
 */
 
-func IsValidSudoku(board [][]byte) bool {
+func isValidSudoku(board [][]byte) bool {
 	rows := make([][]bool, 9)
 	cols := make([][]bool, 9)
 	sqrs := make([][]bool, 9)
@@ -70,7 +70,7 @@ func IsValidSudoku(board [][]byte) bool {
 }
 
 // IsValidSudokuAlt - this solution reduces space slightly but is significantly less performant
-func IsValidSudokuAlt(board [][]byte) bool {
+func isValidSudokuAlt(board [][]byte) bool {
 	counts := make([]map[byte]bool, 27)
 	for i := 0; i < 27; i++ {
 		counts[i] = make(map[byte]bool)
