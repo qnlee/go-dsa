@@ -20,4 +20,4 @@ test:
 	rm coverage.out
 
 bench:
-	go test -bench=. ./... -run=^$ -v
+	go test -bench=. ./... -run=^$
