@@ -1,0 +1,47 @@
+linters:
+  enable:
+    - goconst
+    - gocritic
+    - gocyclo
+    - gofmt
+    - goimports
+    - gosimple
+    - govet
+    - ineffassign
+    - misspell
+    - exportloopref
+    - staticcheck
+    - typecheck
+    - unconvert
+    - unused
+    - vetshadow
+    - whitespace
+    - gosec
+
+linters-settings:
+  golint:
+    min-confidence: 0.8
+
+  govet:
+    check-shadowing: true
+
+  staticcheck:
+    exclude-use-default: true
+
+  errcheck:
+    ignore: Close
+
+  unused:
+    ignore: exported
+
+  gocyclo:
+    min-complexity: 10
+    max-complexity: 20
+
+  goimports:
+    local-prefixes: gitlab.autoiterative.com/group-relaxed-hofstadter-hoover/backendify
+
+run:
+  skip-dirs-use-default: true
+  skip-dirs:
+    - vendor/
