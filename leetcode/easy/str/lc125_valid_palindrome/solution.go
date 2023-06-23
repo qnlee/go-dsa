@@ -1,11 +1,11 @@
-package str
+package lc125_valid_palindrome
 
 import (
 	"strings"
 	"unicode"
 )
 
-func IsPalindrome(s string) bool {
+func isPalindrome(s string) bool {
 	if len(s) <= 1 {
 		return true
 	}

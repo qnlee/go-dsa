@@ -26,7 +26,7 @@ func (d *partialDict) IsValidWord(word string) bool {
 	return d.wordSet[word]
 }
 
-func TransitionWords(startWord string, endWord string, wordList []string) int {
+func transitionWords(startWord string, endWord string, wordList []string) int {
 	if startWord == endWord {
 		return 0
 	}

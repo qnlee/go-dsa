@@ -1,7 +1,6 @@
-package dp_test
+package lc70_climbing_stairs
 
 import (
-	"go-dsa/leetcode/lc_easy/dp"
 	"testing"
 )
 
@@ -18,7 +17,7 @@ func TestClimbStairs_AllSolutions(t *testing.T) {
 	}
 
 	for _, c := range cases {
-		actual := dp.ClimbStairs(c.n, c.soln)
+		actual := climbStairs(c.n, c.soln)
 		if actual != c.expected {
 			t.Errorf(
 				"ClimbStairs(%d) - %s solution: Expected [%d], but got [%d]",
@@ -30,21 +29,21 @@ func TestClimbStairs_AllSolutions(t *testing.T) {
 
 func BenchmarkClimbStairs_Recursive(b *testing.B) {
 	for n := 0; n < b.N; n++ {
-		dp.ClimbStairs(4, "recursive")
+		climbStairs(4, "recursive")
 	}
 }
 func BenchmarkClimbStairs_RecursiveMemo(b *testing.B) {
 	for n := 0; n < b.N; n++ {
-		dp.ClimbStairs(4, "recursiveMemo")
+		climbStairs(4, "recursiveMemo")
 	}
 }
 func BenchmarkClimbStairs_BottomUp(b *testing.B) {
 	for n := 0; n < b.N; n++ {
-		dp.ClimbStairs(4, "bottomUp")
+		climbStairs(4, "bottomUp")
 	}
 }
 func BenchmarkClimbStairs_BottomUpOptimized(b *testing.B) {
 	for n := 0; n < b.N; n++ {
-		dp.ClimbStairs(4, "bottomUpOptimized")
+		climbStairs(4, "bottomUpOptimized")
 	}
 }

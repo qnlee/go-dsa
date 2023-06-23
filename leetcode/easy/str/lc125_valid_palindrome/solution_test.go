@@ -1,7 +1,6 @@
-package str_test
+package lc125_valid_palindrome
 
 import (
-	"go-dsa/leetcode/lc_easy/str"
 	"testing"
 )
 
@@ -44,7 +43,7 @@ func TestIsPalindrome(t *testing.T) {
 	}
 
 	for _, c := range cases {
-		actual := str.IsPalindrome(c.in)
+		actual := isPalindrome(c.in)
 		if actual != c.expected {
 			t.Errorf("isPalindrome(%s): Expected [%t], but got [%t]", c.in, c.expected, actual)
 		}

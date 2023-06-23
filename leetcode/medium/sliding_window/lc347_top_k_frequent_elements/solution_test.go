@@ -1,7 +1,6 @@
-package lc347_top_k_frequent_elements_test
+package lc347_top_k_frequent_elements
 
 import (
-	"go-dsa/leetcode/lc_medium/sliding_window"
 	"reflect"
 	"sort"
 	"testing"
@@ -19,7 +18,7 @@ func TestSolution_TopKFrequent(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		got := sliding_window.TopKFrequent(test.nums, test.k)
+		got := topKFrequent(test.nums, test.k)
 		sort.Ints(got)
 		if !reflect.DeepEqual(got, test.want) {
 			t.Errorf("TopKFrequent(%v, %d) = %v; want %v", test.nums, test.k, got, test.want)
@@ -39,7 +38,7 @@ func TestSolution_TopKFrequentMinHeap(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		got := sliding_window.TopKFrequentMinHeap(test.nums, test.k)
+		got := topKFrequentMinHeap(test.nums, test.k)
 		sort.Ints(got)
 		if !reflect.DeepEqual(got, test.want) {
 			t.Errorf("TopKFrequentMinHeap(%v, %d) = %v; want %v", test.nums, test.k, got, test.want)
@@ -51,7 +50,7 @@ func BenchmarkSolution_TopKFrequent(b *testing.B) {
 	nums := []int{1, 1, 1, 2, 2, 3}
 	k := 2
 	for i := 0; i < b.N; i++ {
-		sliding_window.TopKFrequent(nums, k)
+		topKFrequent(nums, k)
 	}
 }
 
@@ -59,6 +58,6 @@ func BenchmarkSolution_TopKFrequentMinHeap(b *testing.B) {
 	nums := []int{1, 1, 1, 2, 2, 3}
 	k := 2
 	for i := 0; i < b.N; i++ {
-		sliding_window.TopKFrequentMinHeap(nums, k)
+		topKFrequentMinHeap(nums, k)
 	}
 }

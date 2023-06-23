@@ -1,6 +1,6 @@
 package particle_velocity
 
-func ParticleVelocitySoln1(particles []int) int {
+func particleVelocitySoln1(particles []int) int {
 	count := 0 // Count of stable periods
 	for i := 0; i < len(particles)-2; i++ {
 		velocity := particles[i+1] - particles[i]
@@ -14,7 +14,7 @@ func ParticleVelocitySoln1(particles []int) int {
 	return count
 }
 
-func ParticleVelocitySoln2(particles []int) int {
+func particleVelocitySoln2(particles []int) int {
 	totalPeriods := 0
 	pLen := len(particles)
 	for i := 0; i < pLen; i++ {

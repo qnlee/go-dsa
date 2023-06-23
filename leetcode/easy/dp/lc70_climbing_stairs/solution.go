@@ -1,4 +1,4 @@
-package dp
+package lc70_climbing_stairs
 
 /*
 You are climbing a staircase. It takes n steps to reach the top.
@@ -34,7 +34,7 @@ Constraints:
 // n=3: 1+1+1 / 1+2 / 2+1 == 3 ways
 // n=4: 2+2 / 2+1+1 / 1+2+1 / 1+1+2 / 1+1+1+1 == 5 ways == climbStairs(4-1) + climbStairs(4-2)
 
-func ClimbStairs(n int, soln string) int {
+func climbStairs(n int, soln string) int {
 	switch soln {
 	case "recursive":
 		return recursive(n)

@@ -23,7 +23,7 @@ Constraints:
 	It is guaranteed that the answer is unique.
 */
 
-func TopKFrequent(nums []int, k int) []int {
+func topKFrequent(nums []int, k int) []int {
 	// count frequencies of unique elements in nums
 	freqs := make(map[int]int)
 	for _, n := range nums {
@@ -46,7 +46,7 @@ func TopKFrequent(nums []int, k int) []int {
 	return res
 }
 
-func TopKFrequentMinHeap(nums []int, k int) []int {
+func topKFrequentMinHeap(nums []int, k int) []int {
 	freqs := make(map[int]int)
 	for _, n := range nums {
 		freqs[n]++
