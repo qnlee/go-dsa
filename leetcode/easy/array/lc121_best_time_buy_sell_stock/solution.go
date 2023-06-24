@@ -1,4 +1,4 @@
-package array
+package lc121_best_time_buy_sell_stock
 
 /*
 You are given an array prices where prices[i] is the price of a given stock on the ith day.

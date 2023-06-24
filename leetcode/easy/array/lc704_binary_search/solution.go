@@ -1,4 +1,4 @@
-package array
+package lc704_binary_search
 
 /*
 Given an array of integers nums which is sorted in ascending order, and an integer target,
