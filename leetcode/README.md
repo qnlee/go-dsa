@@ -43,22 +43,27 @@ From project root, run:
 ### Leetcode Medium
 | Leetcode # | Problem                                                                                                     | Last Revisited |
 |------------|-------------------------------------------------------------------------------------------------------------|----------------|
+| 11         | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)                       | 7/6/23         |
 | 33         | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)             | 6/14/23        |
-| 36         | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/)                                     | 6/14/23        |
+| 36         | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)                                                 | 6/14/23        |
 | 73         | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)                                       | 6/14/23        |
 | 74         | [Search 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)                                       | 6/14/23        |
-| 91         | [Decode Ways](https://leetcode.com/problems/decode-ways/description/)                                       | 6/23/23        |
+| 91         | [Decode Ways](https://leetcode.com/problems/decode-ways/)                                                   | 6/23/23        |
 | 153        | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | 6/14/23        |
 | 347        | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                           | 6/14/23        |
 | 875        | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)                                   | 6/14/23        |
 
 ### Leetcode Hard
-TODO
+| Leetcode # | Problem                                                                   | Last Revisited |
+|------------|---------------------------------------------------------------------------|----------------|
+| 42         | [Trapping Rainwater](https://leetcode.com/problems/trapping-rain-water/)  | 7/7/23         |
+
 
 ### Derivatives
 | Problem                                     | Last Revisited | 
 |---------------------------------------------|----------------|
 | Check if input string follows given pattern | 6/23/23        |
-| Particle Velocit y                          | 6/23/23        |
-| Transaction Tracker                         | 6/23/23        | 
-| Transition Words                            | 6/14/23        | 
+| Particle Velocity                           | 6/23/23        |
+| Transaction Tracker                         | 6/23/23        |
+| Transition Words                            | 6/14/23        |
+| Word Machine                                | 7/6/23         |
