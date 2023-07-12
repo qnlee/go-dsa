@@ -34,6 +34,7 @@ From project root, run:
 | Leetcode # | Problem                                                                                       | Last Revisited |
 |------------|-----------------------------------------------------------------------------------------------|----------------|
 | 1          | [Two Sum](https://leetcode.com/problems/two-sum/)                                             | ;)             | 
+| 20         | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                         | 7/10/23        |
 | 70         | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                             | 5/22/23        |
 | 121        | [Best Time to Buy Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | 5/2/23         |
 | 125        | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                           | 5/16/23        |
@@ -44,20 +45,23 @@ From project root, run:
 | Leetcode # | Problem                                                                                                     | Last Revisited |
 |------------|-------------------------------------------------------------------------------------------------------------|----------------|
 | 11         | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)                       | 7/6/23         |
+| 22         | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)                                 | 7/12/23        |
 | 33         | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)             | 6/14/23        |
 | 36         | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)                                                 | 6/14/23        |
 | 73         | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)                                       | 6/14/23        |
 | 74         | [Search 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)                                       | 6/14/23        |
 | 91         | [Decode Ways](https://leetcode.com/problems/decode-ways/)                                                   | 6/23/23        |
+| 150        | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)         | 7/11/23        |
 | 153        | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | 6/14/23        |
+| 155        | [Min Stack](https://leetcode.com/problems/min-stack/)                                                       | 7/7/23         |
 | 347        | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                           | 6/14/23        |
+| 739        | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)                                     | 7/12/23        |
 | 875        | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)                                   | 6/14/23        |
 
 ### Leetcode Hard
 | Leetcode # | Problem                                                                   | Last Revisited |
 |------------|---------------------------------------------------------------------------|----------------|
 | 42         | [Trapping Rainwater](https://leetcode.com/problems/trapping-rain-water/)  | 7/7/23         |
-
 
 ### Derivatives
 | Problem                                     | Last Revisited | 
