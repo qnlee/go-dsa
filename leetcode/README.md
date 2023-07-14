@@ -56,6 +56,7 @@ From project root, run:
 | 155        | [Min Stack](https://leetcode.com/problems/min-stack/)                                                       | 7/7/23         |
 | 347        | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                           | 6/14/23        |
 | 739        | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)                                     | 7/12/23        |
+| 853        | [Car Fleet](https://leetcode.com/problems/car-fleet/)                                                       | 7/13/23        |
 | 875        | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)                                   | 6/14/23        |
 
 ### Leetcode Hard
