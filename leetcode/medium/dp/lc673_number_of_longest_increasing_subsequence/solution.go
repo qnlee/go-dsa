@@ -1,6 +1,24 @@
 package lc673_number_of_longest_increasing_subsequence
 
-// Function to find the number of Longest Increasing Subsequences (LIS) in a given slice of integers.
+/*
+Given an integer array nums, return the number of longest increasing subsequences. Notice that the sequence has to be
+strictly increasing.
+
+Example 1:
+	Input: nums = [1,3,5,4,7]
+	Output: 2
+	Explanation: The two longest increasing subsequences are [1, 3, 4, 7] and [1, 3, 5, 7].
+Example 2:
+	Input: nums = [2,2,2,2,2]
+	Output: 5
+	Explanation: The length of the longest increasing subsequence is 1, and there are 5 increasing subsequences of
+		length 1, so output 5.
+
+Constraints:
+	1 <= nums.length <= 2000
+	-106 <= nums[i] <= 106
+*/
+
 func findNumberOfLIS(nums []int) int {
 	n := len(nums)
 	if n < 1 {
@@ -10,29 +28,27 @@ func findNumberOfLIS(nums []int) int {
 	counts := make([]int, n)  // counts of LIS ending at each index.
 	maxLIS, numLIS := 1, 0
 
-	// Loop through the 'nums' slice from the beginning.
 	for i := 0; i < n; i++ {
 		lengths[i] = 1
 		counts[i] = 1
-		// Loop through the elements before the current index 'i'.
+		// loop through the elements before the current index 'i'
 		for j := 0; j < i; j++ {
 			if nums[i] > nums[j] {
-				// If the current element is greater than the element at index 'j', it means we can extend the LIS.
-				// Check if extending the LIS ending at index 'j' results in a longer LIS ending at index 'i'.
+				// if current element > element at j, we can extend the LIS
+				// check if extending the LIS ending at j results in a longer LIS ending at i
 				if lengths[j]+1 > lengths[i] {
 					lengths[i] = lengths[j] + 1
-					counts[i] = counts[j] // Update the count with the count of LIS ending at index 'j'.
+					counts[i] = counts[j] // if so, update the count with the count of LIS ending at j
 				} else if lengths[j]+1 == lengths[i] {
-					// If extending the LIS ending at index 'j' results in the same length of LIS ending at index 'i',
-					// add the count of LIS ending at index 'j' to the count at index 'i'.
+					// if lengths are the same, add the count of LIS ending at j to the count of LIS ending at i
 					counts[i] += counts[j]
 				}
 			}
 		}
-		// Update the overall maxLIS and numLIS.
-		if lengths[i] > maxLIS {
+
+		if lengths[i] > maxLIS { // if LIS length up to index i is > previous max LIS length, update max/num to match
 			maxLIS, numLIS = lengths[i], counts[i]
-		} else if lengths[i] == maxLIS {
+		} else if lengths[i] == maxLIS { // if LIS length up to i is same as previous max LIS length, add to total
 			numLIS += counts[i]
 		}
 	}
