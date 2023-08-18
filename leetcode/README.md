@@ -63,6 +63,8 @@ From project root, run:
 | 875        | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)                                            | 6/14/23        |
 | 891        | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/)                              | 7/25/23        |
 | 1492       | [The kth Factor of n ](https://leetcode.com/problems/the-kth-factor-of-n/)                                           | 7/22/23        |
+| 2405       | [Optimal Partition of a String](https://leetcode.com/problems/optimal-partition-of-string/)                          | 8/17/23        |
+
 
 
 ### Leetcode Hard
