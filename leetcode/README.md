@@ -57,6 +57,7 @@ From project root, run:
 | 153        | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)                     | 6/14/23        |
 | 155        | [Min Stack](https://leetcode.com/problems/min-stack/)                                                                           | 7/7/23         |
 | 347        | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                                               | 6/14/23        |
+| 424        | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)               | 8/21/23        |
 | 547        | [Number of Provinces](https://leetcode.com/problems/number-of-provinces/)                                                       | 7/21/23        |
 | 673        | [Number of Longest Increasing Subsequences](https://leetcode.com/problems/number-of-longest-increasing-subsequence/)            | 7/21/23        |
 | 739        | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)                                                         | 7/12/23        |
