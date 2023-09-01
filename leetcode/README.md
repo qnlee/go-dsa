@@ -37,6 +37,7 @@ From project root, run:
 | 20         | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                         | 7/10/23        |
 | 35         | [Search Insert Position](https://leetcode.com/problems/search-insert-position/)               | 7/10/23        |
 | 70         | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                             | 5/22/23        |
+| 104        | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)   | 8/31/23        |
 | 121        | [Best Time to Buy Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | 5/2/23         |
 | 125        | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                           | 5/16/23        |
 | 226        | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)                       | 8/31/23        |
