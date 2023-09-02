@@ -1,4 +1,4 @@
-package lc_104
+package lc_104_maximum_depth_of_binary_tree
 
 import (
 	"go-dsa/leetcode/easy/tree"
