@@ -1,7 +1,5 @@
 package lc11_container_with_most_water
 
-import "go-dsa/leetcode/helpers"
-
 /*
 https://leetcode.com/problems/container-with-most-water/
 
@@ -29,7 +27,7 @@ Constraints:
 func maxArea(height []int) int {
 	max, i, j := 0, 0, len(height)-1
 	for i < j {
-		area := (j - i) * helpers.Min(height[i], height[j])
+		area := (j - i) * common.Min(height[i], height[j])
 		if area > max {
 			max = area
 		}

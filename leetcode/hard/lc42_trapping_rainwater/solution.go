@@ -1,7 +1,5 @@
 package lc42_trapping_rainwater
 
-import "go-dsa/leetcode/helpers"
-
 /*
 Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it
 can trap after raining.
@@ -31,17 +29,17 @@ func trapDP(height []int) int {
 
 	leftMax[0] = height[0]
 	for i := 1; i < len(height); i++ {
-		leftMax[i] = helpers.Max(leftMax[i-1], height[i])
+		leftMax[i] = common.Max(leftMax[i-1], height[i])
 	}
 
 	rightMax[len(height)-1] = height[len(height)-1]
 	for i := len(height) - 2; i >= 0; i-- {
-		rightMax[i] = helpers.Max(rightMax[i+1], height[i])
+		rightMax[i] = common.Max(rightMax[i+1], height[i])
 	}
 
 	water := 0
 	for i := 1; i < len(height)-1; i++ {
-		water += helpers.Min(leftMax[i], rightMax[i]) - height[i]
+		water += common.Min(leftMax[i], rightMax[i]) - height[i]
 	}
 
 	return water
@@ -56,11 +54,11 @@ func trapTwoPointer(height []int) int {
 	lMax, rMax, water := 0, 0, 0
 	for l < r {
 		if height[l] < height[r] {
-			lMax = helpers.Max(lMax, height[l])
+			lMax = common.Max(lMax, height[l])
 			water += lMax - height[l]
 			l++
 		} else {
-			rMax = helpers.Max(rMax, height[r])
+			rMax = common.Max(rMax, height[r])
 			water += rMax - height[r]
 			r--
 		}

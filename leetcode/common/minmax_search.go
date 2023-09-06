@@ -1,4 +1,4 @@
-package helpers
+package common
 
 func MaxInSlice(nums []int) int {
 	var max int

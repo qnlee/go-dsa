@@ -1,7 +1,5 @@
 package lc424_longest_repeating_character_replacement
 
-import "go-dsa/leetcode/helpers"
-
 /*
 You are given a string s and an integer k. You can choose any character of the string and change it to any other
 uppercase English character. You can perform this operation at most k times.
@@ -32,12 +30,12 @@ func characterReplacement(s string, k int) int {
 	for hi := 0; hi < len(s); hi++ {
 		c := s[hi] - 'A'
 		charCounts[c]++
-		longestCnt = helpers.Max(longestCnt, charCounts[c])
+		longestCnt = common.Max(longestCnt, charCounts[c])
 		if longestCnt+k < hi-lo+1 {
 			charCounts[s[lo]-'A']--
 			lo++
 		}
-		maxLen = helpers.Max(maxLen, hi-lo+1)
+		maxLen = common.Max(maxLen, hi-lo+1)
 	}
 	return maxLen
 }

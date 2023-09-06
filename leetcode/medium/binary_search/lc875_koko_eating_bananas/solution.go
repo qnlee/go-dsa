@@ -1,6 +1,6 @@
 package lc875_koko_eating_bananas
 
-import "go-dsa/leetcode/helpers"
+import "go-dsa/leetcode/common"
 
 /*
 Koko loves to eat bananas. There are n piles of bananas, the ith pile has piles[i] bananas. The guards have gone and
@@ -30,7 +30,7 @@ Constraints:
 */
 
 func minEatingSpeed(piles []int, h int) int {
-	max := helpers.MaxInSlice(piles)
+	max := common.MaxInSlice(piles)
 	left := 1    // min K
 	right := max // max K
 

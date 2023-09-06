@@ -1,9 +1,5 @@
 package lc153_find_minimum_in_rotated_sorted_array
 
-import (
-	"go-dsa/leetcode/helpers"
-)
-
 // Not optimized first attempt, not O(log n) time complexity
 func findMinSoln1(nums []int) int {
 	n := len(nums)
@@ -16,7 +12,7 @@ func findMinSoln1(nums []int) int {
 		}
 	}
 
-	return helpers.Min(nums[n-1], nums[n-2])
+	return common.Min(nums[n-1], nums[n-2])
 }
 
 // Binary search, O(log n) time complexity

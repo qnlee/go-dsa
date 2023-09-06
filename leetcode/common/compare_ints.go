@@ -1,4 +1,4 @@
-package helpers
+package common
 
 func Max(x, y int) int {
 	if x > y {

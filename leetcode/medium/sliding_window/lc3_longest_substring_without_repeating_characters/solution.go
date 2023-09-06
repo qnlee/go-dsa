@@ -1,7 +1,5 @@
 package lc3_longest_substring_without_repeating_characters
 
-import "go-dsa/leetcode/helpers"
-
 /*
 Given a string s, find the length of the longest substring without repeating characters.
 
@@ -40,7 +38,7 @@ func lengthOfLongestSubstring(s string) int {
 			start = prevIdx + 1
 		}
 		seen[c] = i
-		longest = helpers.Max(longest, i-start+1)
+		longest = common.Max(longest, i-start+1)
 	}
 
 	return longest
