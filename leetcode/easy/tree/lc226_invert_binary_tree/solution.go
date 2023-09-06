@@ -1,8 +1,10 @@
 package lc226_invert_binary_tree
 
-import "go-dsa/leetcode/easy/tree"
+import (
+	"go-dsa/leetcode/common"
+)
 
-func invertTree(root *tree.Node) *tree.Node {
+func invertTree(root *common.TreeNode) *common.TreeNode {
 	if root == nil {
 		return nil
 	}

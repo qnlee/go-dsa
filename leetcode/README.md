@@ -42,6 +42,7 @@ From project root, run:
 | 125        | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                           | 5/16/23        |
 | 226        | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)                       | 8/31/23        |
 | 290        | [Word Pattern](https://leetcode.com/problems/word-pattern/)                                   | 6/23/23        |
+| 543        | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)             | 9/1/23         |
 | 704        | [Binary Search](https://leetcode.com/problems/binary-search/)                                 | 5/21/23        |
 
 ### Leetcode Medium

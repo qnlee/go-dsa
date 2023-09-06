@@ -1,25 +1,19 @@
-package lc_104_maximum_depth_of_binary_tree
+package lc104_maximum_depth_of_binary_tree
 
 import (
-	"go-dsa/leetcode/easy/tree"
+	"go-dsa/leetcode/common"
 	"testing"
 )
 
 func TestMaxDepthRecursive(t *testing.T) {
-	root := &tree.Node{
+	root := &common.TreeNode{
 		Val: 1,
-		Left: &tree.Node{
-			Val: 2,
-			Left: &tree.Node{
-				Val: 4,
-			},
-			Right: &tree.Node{
-				Val: 5,
-			},
+		Left: &common.TreeNode{
+			Val:   2,
+			Left:  &common.TreeNode{Val: 4},
+			Right: &common.TreeNode{Val: 5},
 		},
-		Right: &tree.Node{
-			Val: 3,
-		},
+		Right: &common.TreeNode{Val: 3},
 	}
 
 	expectedDepth := 3
@@ -30,20 +24,14 @@ func TestMaxDepthRecursive(t *testing.T) {
 }
 
 func TestMaxDepthIterative(t *testing.T) {
-	root := &tree.Node{
+	root := &common.TreeNode{
 		Val: 1,
-		Left: &tree.Node{
-			Val: 2,
-			Left: &tree.Node{
-				Val: 4,
-			},
-			Right: &tree.Node{
-				Val: 5,
-			},
+		Left: &common.TreeNode{
+			Val:   2,
+			Left:  &common.TreeNode{Val: 4},
+			Right: &common.TreeNode{Val: 5},
 		},
-		Right: &tree.Node{
-			Val: 3,
-		},
+		Right: &common.TreeNode{Val: 3},
 	}
 
 	expectedDepth := 3
@@ -54,18 +42,18 @@ func TestMaxDepthIterative(t *testing.T) {
 }
 
 func BenchmarkMaxDepthRecursive(b *testing.B) {
-	root := &tree.Node{
+	root := &common.TreeNode{
 		Val: 1,
-		Left: &tree.Node{
+		Left: &common.TreeNode{
 			Val: 2,
-			Left: &tree.Node{
+			Left: &common.TreeNode{
 				Val: 4,
 			},
-			Right: &tree.Node{
+			Right: &common.TreeNode{
 				Val: 5,
 			},
 		},
-		Right: &tree.Node{
+		Right: &common.TreeNode{
 			Val: 3,
 		},
 	}
@@ -77,18 +65,18 @@ func BenchmarkMaxDepthRecursive(b *testing.B) {
 }
 
 func BenchmarkMaxDepthIterative(b *testing.B) {
-	root := &tree.Node{
+	root := &common.TreeNode{
 		Val: 1,
-		Left: &tree.Node{
+		Left: &common.TreeNode{
 			Val: 2,
-			Left: &tree.Node{
+			Left: &common.TreeNode{
 				Val: 4,
 			},
-			Right: &tree.Node{
+			Right: &common.TreeNode{
 				Val: 5,
 			},
 		},
-		Right: &tree.Node{
+		Right: &common.TreeNode{
 			Val: 3,
 		},
 	}
