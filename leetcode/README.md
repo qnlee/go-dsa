@@ -31,21 +31,22 @@ From project root, run:
 ## Problems Covered / Statuses 
 
 ### Leetcode Easy
-| Leetcode # | Problem                                                                                       | Last Revisited |
-|------------|-----------------------------------------------------------------------------------------------|----------------|
-| 1          | [Two Sum](https://leetcode.com/problems/two-sum/)                                             | ;)             | 
-| 20         | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                         | 7/10/23        |
-| 35         | [Search Insert Position](https://leetcode.com/problems/search-insert-position/)               | 7/10/23        |
-| 70         | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                             | 5/22/23        |
-| 100        | [Same Tree](https://leetcode.com/problems/same-tree/)                                         | 9/19/23        |
-| 104        | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)   | 9/20/23        |
-| 121        | [Best Time to Buy Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | 5/2/23         |
-| 125        | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                           | 5/16/23        |
-| 226        | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)                       | 8/31/23        |
-| 290        | [Word Pattern](https://leetcode.com/problems/word-pattern/)                                   | 6/23/23        |
-| 543        | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)             | 9/20/23        |
-| 572        | [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)             | 9/20/23        |
-| 704        | [Binary Search](https://leetcode.com/problems/binary-search/)                                 | 5/21/23        |
+| Leetcode # | Problem                                                                                                                  | Last Revisited |
+|------------|--------------------------------------------------------------------------------------------------------------------------|----------------|
+| 1          | [Two Sum](https://leetcode.com/problems/two-sum/)                                                                        | ;)             | 
+| 20         | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                                                    | 7/10/23        |
+| 35         | [Search Insert Position](https://leetcode.com/problems/search-insert-position/)                                          | 7/10/23        |
+| 70         | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                                                        | 5/22/23        |
+| 100        | [Same Tree](https://leetcode.com/problems/same-tree/)                                                                    | 9/19/23        |
+| 104        | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)                              | 9/20/23        |
+| 121        | [Best Time to Buy Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)                            | 5/2/23         |
+| 125        | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                                                      | 5/16/23        |
+| 226        | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)                                                  | 8/31/23        |
+| 235        | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | 9/20/23        |
+| 290        | [Word Pattern](https://leetcode.com/problems/word-pattern/)                                                              | 6/23/23        |
+| 543        | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)                                        | 9/20/23        |
+| 572        | [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)                                        | 9/20/23        |
+| 704        | [Binary Search](https://leetcode.com/problems/binary-search/)                                                            | 5/21/23        |
 
 ### Leetcode Medium
 | Leetcode # | Problem                                                                                                                         | Last Revisited |
