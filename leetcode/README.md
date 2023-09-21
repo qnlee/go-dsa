@@ -42,7 +42,6 @@ From project root, run:
 | 121        | [Best Time to Buy Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)                            | 5/2/23         |
 | 125        | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                                                      | 5/16/23        |
 | 226        | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)                                                  | 8/31/23        |
-| 235        | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | 9/20/23        |
 | 290        | [Word Pattern](https://leetcode.com/problems/word-pattern/)                                                              | 6/23/23        |
 | 543        | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)                                        | 9/20/23        |
 | 572        | [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)                                        | 9/20/23        |
@@ -62,6 +61,7 @@ From project root, run:
 | 150        | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)                             | 7/11/23        |
 | 153        | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)                     | 6/14/23        |
 | 155        | [Min Stack](https://leetcode.com/problems/min-stack/)                                                                           | 7/7/23         |
+| 235        | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)        | 9/20/23        |
 | 347        | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                                               | 6/14/23        |
 | 424        | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)               | 8/21/23        |
 | 547        | [Number of Provinces](https://leetcode.com/problems/number-of-provinces/)                                                       | 7/21/23        |
