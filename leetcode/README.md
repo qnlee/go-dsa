@@ -11,25 +11,29 @@
 --- 
 ## How to Test
 ### Run all tests
-> Not recommended, because this repo is quite large...
 
-From project root, run:
-* tests: `make test`
-* bench: `make bench`
+> From project root, run:
+> 
+> ```shell
+> ## TESTS
+> make test
+> 
+> ## BENCH
+> make bench
+> ``` 
 
 ### Run tests for `leetcode/easy` 
-From project root, run: 
-* unit tests: `make test_lc_easy`
-* bench: `make bench_lc_easy`
+> From project root, run: 
+> * unit tests: `make test_lc_easy`
+> * bench: `make bench_lc_easy`
 
 ### Run tests for `leetcode/medium` 
-From project root, run:
-* unit tests: `make test_lc_medium`
-* bench: `make bench_lc_medium`
+> From project root, run:
+> * unit tests: `make test_lc_medium`
+> * bench: `make bench_lc_medium`
 
 ---
-## Problems Covered / Statuses 
-
+## Problems Covered 
 ### Leetcode Easy
 | Leetcode # | Problem                                                                                                                  | Last Revisited |
 |------------|--------------------------------------------------------------------------------------------------------------------------|----------------|
@@ -46,6 +50,7 @@ From project root, run:
 | 543        | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)                                        | 9/20/23        |
 | 572        | [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)                                        | 9/20/23        |
 | 704        | [Binary Search](https://leetcode.com/problems/binary-search/)                                                            | 5/21/23        |
+
 
 ### Leetcode Medium
 | Leetcode # | Problem                                                                                                                         | Last Revisited |
@@ -74,11 +79,11 @@ From project root, run:
 | 2405       | [Optimal Partition of a String](https://leetcode.com/problems/optimal-partition-of-string/)                                     | 8/17/23        |
 
 
-
 ### Leetcode Hard
 | Leetcode # | Problem                                                                   | Last Revisited |
 |------------|---------------------------------------------------------------------------|----------------|
 | 42         | [Trapping Rainwater](https://leetcode.com/problems/trapping-rain-water/)  | 7/7/23         |
+
 
 ### Derivatives
 | Problem                                     | Last Revisited | 
